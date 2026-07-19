@@ -1,5 +1,8 @@
 name = "buon-compleanno-naomi"
 compatibility_date = "2026-07-19"
+main = "worker.js"
 
 [assets]
 directory = "./"
+binding = "ASSETS"
+run_worker_first = true

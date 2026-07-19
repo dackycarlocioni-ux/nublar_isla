@@ -1,0 +1,7 @@
+# Copia questo file in ".dev.vars" (senza .example) per testare il gate d'accesso
+# in locale con `wrangler dev`. Il file ".dev.vars" NON va committato (è già in .gitignore).
+#
+# Genera valori random con: openssl rand -hex 24
+
+PARTY_TOKEN=sostituisci-con-un-token-casuale
+SESSION_SECRET=sostituisci-con-un-altro-token-casuale-e-diverso

@@ -3,3 +3,5 @@ assets/*.txt
 .git
 .gitignore
 wrangler.toml
+worker.js
+.dev.vars*

@@ -1,2 +1,4 @@
 .github/*
 .claude/*
+.dev.vars
+.dev.vars.local
