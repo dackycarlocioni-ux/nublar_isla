@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Compleanno di [NOME] — Accesso al Settore Riservato</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ SEQUENZA DI BOOT DEL TERMINALE ============ -->
+<div id="boot-screen" aria-hidden="true">
+  <pre id="boot-log"></pre>
+  <button id="skip-boot" type="button">salta ›</button>
+</div>
+
+<!-- ============ SITO ============ -->
+<div id="site" hidden>
+
+  <div class="grain"></div>
+  <div class="contours" aria-hidden="true"></div>
+
+  <header class="hero">
+    <p class="eyebrow">// sistema di controllo perimetrale — settore 04</p>
+    <h1 class="wordmark">
+      <span class="wordmark-line">PARCO</span>
+      <span class="wordmark-line">GIURASSICO</span>
+    </h1>
+    <p class="hero-sub">Un compleanno è scappato dal recinto.</p>
+
+    <div class="placard hero-placard">
+      <p class="placard-label">soggetto</p>
+      <p class="placard-value" id="honoree">[NOME DELL'AMICO]</p>
+      <p class="placard-label">compie</p>
+      <p class="placard-value" id="age">[XX] anni</p>
+    </div>
+
+    <div class="countdown" id="countdown" aria-live="polite">
+      <div class="countdown-unit"><span id="cd-days">--</span><label>giorni</label></div>
+      <div class="countdown-unit"><span id="cd-hours">--</span><label>ore</label></div>
+      <div class="countdown-unit"><span id="cd-mins">--</span><label>min</label></div>
+      <div class="countdown-unit"><span id="cd-secs">--</span><label>sec</label></div>
+    </div>
+    <p class="countdown-caption" id="countdown-caption">al contenimento della festa</p>
+  </header>
+
+  <main>
+
+    <!-- ============ LOG DELLA GIORNATA ============ -->
+    <section class="section" id="log">
+      <h2 class="section-title">Log del Ranger</h2>
+      <p class="section-sub">Registro eventi — settore ricreativo</p>
+
+      <ol class="timeline">
+        <li class="timeline-entry">
+          <span class="timeline-time">16:00</span>
+          <div class="timeline-body">
+            <h3>Ingresso al compound</h3>
+            <p>[Indirizzo del ritrovo — MODIFICA QUI]</p>
+          </div>
+        </li>
+        <li class="timeline-entry">
+          <span class="timeline-time">17:00</span>
+          <div class="timeline-body">
+            <h3>Ricognizione e aperitivo</h3>
+            <p>[Cosa si fa in questa fascia oraria]</p>
+          </div>
+        </li>
+        <li class="timeline-entry">
+          <span class="timeline-time">20:00</span>
+          <div class="timeline-body">
+            <h3>Approvvigionamento serale</h3>
+            <p>[Cena / buffet / dettagli]</p>
+          </div>
+        </li>
+        <li class="timeline-entry">
+          <span class="timeline-time">22:30</span>
+          <div class="timeline-body">
+            <h3>Avvistamento della torta</h3>
+            <p>Contenimento del T-Rex non garantito.</p>
+          </div>
+        </li>
+        <li class="timeline-entry">
+          <span class="timeline-time">&gt; 00:00</span>
+          <div class="timeline-body">
+            <h3>Zona non monitorata</h3>
+            <p>Si prosegue a proprio rischio.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ MAPPA / LUOGO ============ -->
+    <section class="section" id="location">
+      <h2 class="section-title">Settore d'incontro</h2>
+      <div class="placard">
+        <p class="placard-label">coordinate</p>
+        <p class="placard-value" id="address">[Nome del locale / indirizzo — MODIFICA QUI]</p>
+        <a class="btn" id="map-link" href="#" target="_blank" rel="noopener">apri mappa ›</a>
+      </div>
+    </section>
+
+    <!-- ============ REGOLE DEL PARCO ============ -->
+    <section class="section" id="rules">
+      <h2 class="section-title">Regolamento del parco</h2>
+      <p class="section-sub">Norme di sicurezza per i visitatori</p>
+
+      <div class="hazard-grid">
+        <div class="hazard-card">
+          <p class="hazard-code">ART. 1</p>
+          <p>Non nutrire gli invitati prima dell'orario stabilito.</p>
+        </div>
+        <div class="hazard-card">
+          <p class="hazard-code">ART. 2</p>
+          <p>[Dress code o tema da rispettare, se previsto]</p>
+        </div>
+        <div class="hazard-card">
+          <p class="hazard-code">ART. 3</p>
+          <p>[Cosa portare — regalo, sedia, bevanda...]</p>
+        </div>
+        <div class="hazard-card">
+          <p class="hazard-code">ART. 4</p>
+          <p>Vietato uscire dal veicolo durante il tour.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RSVP ============ -->
+    <section class="section" id="rsvp">
+      <h2 class="section-title">Conferma presenza</h2>
+      <p class="section-sub">Il parco ha bisogno di sapere quanti ranger aspettarsi.</p>
+      <div class="placard">
+        <p class="placard-label">rispondi entro</p>
+        <p class="placard-value">[data limite RSVP]</p>
+        <a class="btn" id="rsvp-link" href="#">conferma via messaggio ›</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>sistema ingen — accesso registrato · connessione cifrata</p>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
